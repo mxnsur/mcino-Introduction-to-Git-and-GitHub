@@ -2,17 +2,19 @@
 
 ## Our Pledge
 
-We pledge to make participation in our community a harassment-free experience for everyone.
+We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone.
 
 ## Our Standards
 
 Examples of behavior that contributes to a positive environment include:
-- Being respectful
-- Accepting constructive criticism
+
+* Demonstrating empathy and kindness toward other people
+* Being respectful of differing opinions
+* Giving and gracefully accepting constructive feedback
 
 ## Enforcement Responsibilities
 
-Community leaders are responsible for clarifying and enforcing standards.
+Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior.
 
 ## Scope
 
@@ -20,11 +22,11 @@ This Code of Conduct applies within all community spaces.
 
 ## Enforcement
 
-Instances of abusive behavior may be reported to the community leaders.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders.
 
 ## Enforcement Guidelines
 
-Community leaders will follow these guidelines in determining consequences.
+Community leaders will follow these Community Impact Guidelines in determining the consequences.
 
 ## Attribution
 
