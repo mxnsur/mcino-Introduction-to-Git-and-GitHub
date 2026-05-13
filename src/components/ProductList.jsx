@@ -72,6 +72,11 @@ const ProductList = () => {
 
   const cartItems = useSelector((state) => state.cart.items);
 
+  const totalCartQuantity = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
   const handleAddToCart = (plant) => {
     dispatch(addItem(plant));
   };
@@ -91,7 +96,7 @@ const ProductList = () => {
           <a href="#home">Home</a>
           <a href="#plants">Plants</a>
           <a href="#cart">
-            Cart ({cartItems.length})
+            Cart ({totalCartQuantity})
           </a>
         </div>
       </div>
@@ -119,7 +124,7 @@ const ProductList = () => {
                     <p>${plant.price}</p>
 
                     <button
-                      disabled={addedToCart}
+                      disabled={addedToCart ? true : false}
                       onClick={() => handleAddToCart(plant)}
                     >
                       {addedToCart ? 'Added to Cart' : 'Add to Cart'}
