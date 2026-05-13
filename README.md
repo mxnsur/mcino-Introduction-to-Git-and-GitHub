@@ -1,42 +1,50 @@
-# Simple Interest Calculator
+# Paradise Nursery Shopping Application
 
-This project is a simple interest calculator developed using a Bash shell script.
+Paradise Nursery is a React and Redux shopping cart application for an online plant shop. The application allows customers to browse houseplants by category, view plant names, thumbnails, descriptions, and prices, add products to a cart, manage quantities, remove items, and review the total cart cost.
 
-The calculator helps users compute simple interest based on:
-- Principal amount
-- Annual rate of interest
-- Time period in years
+## Project Features
 
-## Features
-
-- Accepts user input directly from the terminal
-- Calculates simple interest instantly
-- Lightweight and easy to use
-- Written entirely in Bash scripting
-
-## Formula Used
-
-Simple Interest = (Principal × Rate × Time) / 100
-
-## Usage
-
-Run the script using:
-
-./simple-interest.sh
-
-Then enter:
-- Principal amount
-- Rate of interest
-- Time period
-
-The script will display the calculated simple interest.
+- Landing page with Paradise Nursery branding and a Get Started button
+- About Us section with company details
+- Product listing page with plants grouped by category
+- At least three plant categories
+- At least six unique houseplants in each category
+- Add to Cart buttons that disable after adding a product
+- Dynamic cart icon count in the navigation bar
+- Shopping cart page with thumbnails, names, unit prices, item totals, quantity controls, delete buttons, cart total, checkout message, and continue shopping navigation
 
 ## Technologies Used
 
-- Bash Shell Script
-- Git
-- GitHub
+- React
+- Vite
+- Redux Toolkit
+- React Redux
+- CSS
 
-## License
+## Project Structure
 
-This project is licensed under the Apache 2.0 License.
+```text
+src/
+  App.jsx
+  App.css
+  main.jsx
+  components/
+    AboutUs.jsx
+    CartItem.jsx
+    Navbar.jsx
+    ProductList.jsx
+  redux/
+    CartSlice.jsx
+    store.jsx
+```
+
+## How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+## Project Name
+
+Paradise Nursery Shopping Application
