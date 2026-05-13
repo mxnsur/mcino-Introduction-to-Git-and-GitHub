@@ -64,20 +64,22 @@ const plants = [
     price: 22,
     category: 'Flowering Plants',
     image: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735',
-  },
+  }
 ];
 
 const ProductList = () => {
   const dispatch = useDispatch();
 
-  const cartItems = useSelector(
-    (state) => state.cart.items
-  );
+  const cartItems = useSelector((state) => state.cart.items);
+
+  const handleAddToCart = (plant) => {
+    dispatch(addItem(plant));
+  };
 
   const categories = [
     'Tropical Plants',
     'Succulents',
-    'Flowering Plants',
+    'Flowering Plants'
   ];
 
   return (
@@ -104,29 +106,23 @@ const ProductList = () => {
             {plants
               .filter((plant) => plant.category === category)
               .map((plant) => {
-                const added = cartItems.find(
+                const addedToCart = cartItems.find(
                   (item) => item.id === plant.id
                 );
 
                 return (
-                  <div
-                    className="product-card"
-                    key={plant.id}
-                  >
-                    <img
-                      src={plant.image}
-                      alt={plant.name}
-                    />
+                  <div className="product-card" key={plant.id}>
+                    <img src={plant.image} alt={plant.name} />
 
                     <h3>{plant.name}</h3>
 
                     <p>${plant.price}</p>
 
                     <button
-                      disabled={added}
-                      onClick={() => dispatch(addItem(plant))}
+                      disabled={addedToCart}
+                      onClick={() => handleAddToCart(plant)}
                     >
-                      {added ? 'Added' : 'Add to Cart'}
+                      {addedToCart ? 'Added to Cart' : 'Add to Cart'}
                     </button>
                   </div>
                 );
