@@ -16,6 +16,10 @@ const CartItem = () => {
     0
   );
 
+  const handleContinueShopping = () => {
+    window.location.href = '/products';
+  };
+
   return (
     <div>
       <div className="navbar">
@@ -97,7 +101,7 @@ const CartItem = () => {
           Checkout
         </button>
 
-        <button>
+        <button onClick={handleContinueShopping}>
           Continue Shopping
         </button>
       </div>
